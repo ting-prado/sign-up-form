@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./reset.css">
 </head>
 <body>
     <main id='main'>
@@ -15,6 +15,7 @@
           <img src="./images/rose.png" alt="rose icon">
           <p>Saint's</p>
         </div>
+        <span>Photo by: Richard Brutyo</span>
       </div>
       <div class='content'>
         <p>&emsp;This is not a real online service! You know you need something
@@ -22,8 +23,41 @@
           Sign up <span class='em'>now</span> to get started.
         </p>
         <p>You <span class='em'>know</span> you want to.</p>
+        <p>Let's do this!</p>
         <form>
-
+          <div class="wrapper">
+            <div>
+              <label for="fname">First Name:</label>
+              <input type="text" id="fname" name="fname">
+              <span class="error"></span>
+            </div>
+            <div>
+              <label for="lname">Last Name:</label>
+              <input type="text" name="lname" id="lname">
+              <span class="error"></span>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email">
+              <span class="error"></span>
+            </div>
+            <div>
+              <label for="number">Phone Number:</label>
+              <input type="number" name="number" id="number">
+              <span class="error"></span>
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password">
+              <span class="error"></span>
+            </div>
+            <div>
+              <label for="cpassword">Confirm Password:</label>
+              <input type="password" name="cpassword" id="cpassword">
+              <span class="error"></span>
+            </div>
+          </div>
+          <button type="submit">Create Account</button>
         </form>
       </div>
     </main>
