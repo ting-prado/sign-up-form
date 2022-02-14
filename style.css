@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter&Noto+Sans+KR:wght@400;500&Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Comforter&family=Zen+Kaku+Gothic+Antique&family=Source+Sans+Pro&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,6 +7,7 @@
 #main {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .side {
@@ -33,42 +34,45 @@
 
 .logo {
   background: rgba(0, 0, 0, 0.6);
-  height: 25px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 2px;
 }
 
 .logo > img {
-  height: 20px;
-  width: 16px;
+  height: 30px;
+  width: 24px;
 }
 
 .logo > p {
   font-family: 'Comforter', cursive;
-  padding-top: 5px;
-  font-size: 1.2rem;
+  padding-top: 10px;
+  font-size: 2rem;
 }
 
 .content {
   background: #f1d1d1;
   width: 100%;
   height: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .content p {
-  font-size: min(1.3rem, 95%);
+  font-size: min(1rem, 80%);
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
   text-align: justify;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+  line-height: 1.2;
 }
 
 .content > p:nth-child(3) {
   margin-top: calc(5% + 15px);
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: bold;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .em {
@@ -82,8 +86,9 @@ input {
   -webkit-appearance: none;
   border: 1px solid pink;
   border-radius: 4px;
-  height: 28px;
+  height: 26px;
   padding: 4px;
+  font-family: 'Source Sans Pro', arial;
 }
 
 form {
@@ -96,12 +101,39 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 3px lightpink;
+  box-shadow: 0 5px 3px lightpink;
   row-gap: 25px;
-  padding: 10px 25px 30px 25px;
+  padding: 0 4rem 30px 4rem;
   margin: 0;
+}
+
+.wrapper label {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-size: 11.5px;
+  text-transform: uppercase;
+}
+
+button,
+form > span {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
 button {
   margin-top: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 2rem;
+  background: #ff5722;
+  border: 2px solid #f44336;
+  border-radius: 5px;
+  width: 50%;
+}
+
+form > span {
+  margin: 0.8rem 0;
+}
+
+a:link {
+  color: #f44336;
 }
