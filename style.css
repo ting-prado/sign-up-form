@@ -190,6 +190,16 @@ a:link {
     width: 50px;
   }
 
+  .side > span {
+    font-size: min(12px, 60%);
+    width: min(225px, 12rem);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+  }
+
   .content {
     height: 100vh;
     overflow-y: auto;
