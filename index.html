@@ -18,43 +18,46 @@
         <span>Photo by: Richard Brutyo on Unsplash</span>
       </div>
       <div class='content'>
-        <p>&emsp;This is not a real online service! You know you need something
-          like this in your life to help you realize your deepest dreams.
-          Sign up <span class='em'>now</span> to get started.
-        </p>
+        <p>This is not a real online service! You know you need something
+          like this in your life to help you realize your deepest dreams.</p>
+        <p>Sign up <span class='em'>now</span> to get started.</p>
         <p>You <span class='em'>know</span> you want to.</p>
         <p>Let's do this!</p>
         <form>
           <div class="wrapper">
-            <div>
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="fname">
-              <span class="error"></span>
+            <div class="flex-left">
+              <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname">
+                <span class="error"></span>
+              </div>
+              <div>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname">
+                <span class="error"></span>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <span class="error"></span>
+              </div>
             </div>
-            <div>
-              <label for="lname">Last Name</label>
-              <input type="text" name="lname" id="lname">
-              <span class="error"></span>
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email">
-              <span class="error"></span>
-            </div>
-            <div>
-              <label for="number">Phone Number</label>
-              <input type="number" name="number" id="number">
-              <span class="error"></span>
-            </div>
-            <div>
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password">
-              <span class="error"></span>
-            </div>
-            <div>
-              <label for="cpassword">Confirm Password</label>
-              <input type="password" name="cpassword" id="cpassword">
-              <span class="error"></span>
+            <div class="flex-right">
+              <div>
+                <label for="number">Phone Number</label>
+                <input type="number" name="number" id="number">
+                <span class="error"></span>
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <span class="error"></span>
+              </div>
+              <div>
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" name="cpassword" id="cpassword">
+                <span class="error"></span>
+              </div>
             </div>
           </div>
           <button type="submit">Create Account</button>

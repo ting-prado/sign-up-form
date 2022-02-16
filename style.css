@@ -65,12 +65,20 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   text-align: justify;
-  margin-bottom: 1.5rem;
   padding: 0 1rem;
   line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
-.content > p:nth-child(3) {
+.content > p:nth-child(1) {
+  margin-bottom: 0;
+}
+
+.content > p:nth-child(2) {
+  margin-top: 0;
+}
+
+.content > p:nth-child(4) {
   margin-top: calc(5% + 15px);
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-weight: 500;
@@ -105,9 +113,16 @@ form {
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 3px lightpink;
+  height: auto;
+}
+
+.flex-left,
+.flex-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   row-gap: 25px;
   padding: 0 4rem 30px 4rem;
-  margin: 0;
 }
 
 .wrapper label {
@@ -139,4 +154,106 @@ form > span {
 
 a:link {
   color: #f44336;
+}
+
+@media (min-width: 712px) and (min-height: 600px) {
+  body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  #main {
+    display: flex;
+    height: 100%;
+  }
+
+  .side {
+    height: 100vh;
+    width: 35%;
+    display: block;
+  }
+
+  .logo {
+    margin-top: min(28rem, 35vh);
+    height: 90px;
+  }
+
+  .logo > p {
+    height: auto;
+    font-size: max(3rem, 410%);
+    padding-top: 20px;
+  }
+
+  .logo > img {
+    height: 60px;
+    width: 50px;
+  }
+
+  .content {
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content > p:nth-child(4) {
+    margin-top: 2%;
+    font-size: 1.2rem;
+  }
+
+  .content > *:not(form) {
+    margin-left: 2rem;
+  }
+
+  .content p {
+    width: 60%;
+  }
+
+  .content p,
+  .wrapper {
+    padding: 0;
+    font-size: 1.1rem;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  form {
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .wrapper {
+    flex-direction: row;
+    width: 100%;
+    padding-left: 2rem;
+    box-shadow: 0 7px 4px lightpink;
+  }
+
+  .flex-left,
+  .flex-right {
+    width: max(30%, 250px);
+    padding: 0 0 30px 0;
+  }
+
+  button {
+    margin-top: 1.5rem;
+    width: 200px;
+  }
+
+  button, 
+  form > span {
+    margin-left: 2rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
 }
