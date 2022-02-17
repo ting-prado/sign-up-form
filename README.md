@@ -16,6 +16,7 @@ This project is intended to practice what I've learned on the intermediate HTML 
 * Flexbox
 * CSS Properties
 * CSS Selectors
+* CSS Functions
 * Positioning
 * Text and Element Styles
 * Page responsiveness
@@ -25,4 +26,4 @@ This project is intended to practice what I've learned on the intermediate HTML 
 
 ## Thoughts After Completion
 
-This project is kinda a challenging one specially when it came to the responsiveness design of the page. I've also become more comfortable and familiar in using advanced CSS selectors and form validation using the Constraint Validition API. Overall, I am satisfied with the final output of the project.
+This project is kinda a challenging one specially when it came to the responsiveness design of the page. I've also become more comfortable and familiar in using advanced CSS selectors and functions, and form validation using the Constraint Validition API. Overall, I am satisfied with the final output of the project.
