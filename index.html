@@ -29,29 +29,29 @@
             <div class="flex-left">
               <div>
                 <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname">
+                <input type="text" id="fname" name="fname" placeholder="John">
                 <span class="error"></span>
               </div>
               <div>
                 <label for="lname">Last Name</label>
-                <input type="text" name="lname" id="lname">
+                <input type="text" name="lname" id="lname" placeholder="Doe">
                 <span class="error"></span>
               </div>
               <div>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="samplemail@yahoo.com">
                 <span class="error"></span>
               </div>
             </div>
             <div class="flex-right">
               <div>
                 <label for="number">Phone Number</label>
-                <input type="number" name="number" id="number">
+                <input type="text" name="number" id="number" pattern="^(09|\+639)\d{9}$" placeholder="+639012345678">
                 <span class="error"></span>
               </div>
               <div>
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" minlength="5">
                 <span class="error"></span>
               </div>
               <div>
@@ -61,10 +61,11 @@
               </div>
             </div>
           </div>
-          <button type="submit">Create Account</button>
+          <button type='submit'>Create Account</button>
           <span>Already have an account? <a href="#">Log in</a></span>
         </form>
       </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

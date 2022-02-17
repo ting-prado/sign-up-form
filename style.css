@@ -34,7 +34,7 @@
 }
 
 .logo {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   height: 35px;
   display: flex;
   justify-content: center;
@@ -68,6 +68,7 @@
   padding: 0 1rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: rgb(31, 31, 31);
 }
 
 .content > p:nth-child(1) {
@@ -102,6 +103,7 @@ input {
 }
 
 form {
+  --error-height: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,8 +123,8 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
-  padding: 0 4rem 30px 4rem;
+  row-gap: 10px;
+  padding: 0 4rem var(--error-height) 4rem;
 }
 
 .wrapper label {
@@ -142,7 +144,7 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 2rem;
-  background: #ff5722;
+  background: #ff3838;
   border: 2px solid #f44336;
   border-radius: 5px;
   width: 50%;
@@ -154,6 +156,33 @@ form > span {
 
 a:link {
   color: #f44336;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid blue;
+  padding: 3px;
+}
+
+.invalid {
+  border: 2px solid maroon;
+  padding: 3px;
+}
+
+.valid {
+  background-color: rgba(145, 253, 145, 0.4);
+  border: 1px solid green;
+}
+
+.error {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: maroon;
+  padding: 2px;
+  height: var(--error-height);
+  font-family: 'Zen Kaku Gothic Antique', arial;
 }
 
 @media (min-width: 712px) and (min-height: 600px) {
@@ -175,7 +204,7 @@ a:link {
   }
 
   .logo {
-    margin-top: min(28rem, 35vh);
+    margin-top: max(11rem, 30vh);
     height: 90px;
   }
 
@@ -235,6 +264,10 @@ a:link {
     width: 200px;
   }
 
+  .error {
+    width: 200px;
+  }
+
   form {
     align-items: flex-start;
     height: auto;
@@ -265,5 +298,6 @@ a:link {
 
   button:hover {
     cursor: pointer;
+    opacity: 0.9;
   }
 }
