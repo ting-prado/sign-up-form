@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-#main {
+body {
   min-height: 100vh;
   height: 100%;
   width: 100%;
@@ -123,8 +123,11 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
-  padding: 0 4rem var(--error-height) 4rem;
+  padding: 0 4rem;
+}
+
+.flex-right > div:last-child {
+  margin-bottom: 1rem;
 }
 
 .wrapper label {
@@ -162,11 +165,13 @@ input:focus {
   outline: none;
   border: 2px solid blue;
   padding: 3px;
+  background-color: white;
 }
 
 .invalid {
   border: 2px solid maroon;
   padding: 3px;
+  background: #ffc0c0;
 }
 
 .valid {
@@ -185,21 +190,20 @@ input:focus {
   font-family: 'Zen Kaku Gothic Antique', arial;
 }
 
-@media (min-width: 712px) and (min-height: 600px) {
-  body {
-    height: 100%;
+@media (min-width: 712px) {
+  html {
     margin: 0;
     overflow: hidden;
   }
 
   #main {
-    display: flex;
-    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
   }
 
   .side {
-    height: 100vh;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     display: block;
   }
 
@@ -230,7 +234,8 @@ input:focus {
   }
 
   .content {
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -291,7 +296,7 @@ input:focus {
     width: 200px;
   }
 
-  button, 
+  button,
   form > span {
     margin-left: 2rem;
   }
