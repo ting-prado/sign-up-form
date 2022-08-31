@@ -16,7 +16,7 @@ body {
   background-position: center 32%;
   background-size: cover;
   color: white;
-  height: 120px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +25,7 @@ body {
 }
 
 .side > span {
-  font-size: 6px;
+  font-size: 11px;
   font-family: 'Noto Sans KR', sans-serif;
   align-self: flex-start;
   padding: 2px;
@@ -35,21 +35,20 @@ body {
 
 .logo {
   background: rgba(0, 0, 0, 0.5);
-  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .logo > img {
-  height: 30px;
-  width: 24px;
+  height: 40px;
+  width: 34px;
 }
 
 .logo > p {
   font-family: 'Comforter', cursive;
   padding-top: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .content {
@@ -61,7 +60,7 @@ body {
 }
 
 .content p {
-  font-size: min(1rem, 80%);
+  font-size: min(1.5rem, 100%);
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   text-align: justify;
@@ -80,7 +79,7 @@ body {
 }
 
 .content > p:nth-child(4) {
-  margin-top: calc(5% + 15px);
+  margin-top: calc(3% + 15px);
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -190,7 +189,7 @@ input:focus {
   font-family: 'Zen Kaku Gothic Antique', arial;
 }
 
-@media (min-width: 712px) {
+@media screen and (min-width: 712px) {
   html {
     margin: 0;
     overflow: hidden;
@@ -198,7 +197,7 @@ input:focus {
 
   #main {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .side {
@@ -224,12 +223,9 @@ input:focus {
   }
 
   .side > span {
-    font-size: min(12px, 60%);
-    width: min(225px, 12rem);
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: min(15px, 80%);
+    width: 100%;
+    left: 1rem;
     padding: 8px;
   }
 
